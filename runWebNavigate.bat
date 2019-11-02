@@ -1,1 +1,0 @@
-@py.exe C:\Users\jweif\Documents\useful_py_scripts\webNavigate.py %*
