@@ -1,3 +1,4 @@
+fully copied from https://www.programiz.com/python-programming/json
 
 #  1) python dict is the equivalent of json object 
  
