@@ -1,3 +1,4 @@
+# forked from dgadiraju/gen_logs
 # gen_logs
 
 This is to simulate web application writing traffic details to log file.
