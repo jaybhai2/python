@@ -79,9 +79,9 @@ class PlatformDataFrame()
 		self.data_frame = uppered
 		return self
 	```
-instead of returning self, one can return a new instance return PlatformDataFrame(col_renamed_df)
 
+instead of returning self, one can return a new instance return PlatformDataFrame(col_renamed_df), or return a different class that have different method: return CharacteristicJsonClass(cleaned_df) 
 
-
+like dataframe.read return DataFrameReader class
 
 
