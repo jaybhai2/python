@@ -78,6 +78,11 @@ class PlatformDataFrame()
 		uppered = some function
 		self.data_frame = uppered
 		return self
+		
+	def transform(func, **kwargs):
+		self.data_frame = func(self.data_frame, **kwargs)	
+		return self
+		
 	```
 
 instead of returning self, one can return a new instance return PlatformDataFrame(col_renamed_df), or return a different class that have different method: return CharacteristicJsonClass(cleaned_df) 
