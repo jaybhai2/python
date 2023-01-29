@@ -2,6 +2,32 @@
 some useful py script that perform certain task
 
 
+### Two Sum Closest, (binary search logic)
+```
+import math
+
+def findTwoSumClosest(nums, target):
+    min_diff = (math.inf, -1, -1)
+
+    nums.sort()
+    start = 0
+    end = len(nums) - 1
+
+    while start < end:
+        summ = nums[start] + nums[end]
+        diff = abs(summ - target)
+        if diff < min_diff[0]:
+            min_diff = (diff, nums[start], nums[end])
+
+        if summ > target:
+            end -= 1
+        if summ < target:
+            start += 1
+    return [min_diff[1], min_diff[2]]
+
+```
+
+
 ### Fibonacci
 ```
 def Fibonacci(n):
